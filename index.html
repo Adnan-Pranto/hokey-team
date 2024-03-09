@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My hockey Team</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind + Daisy Ui  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- GOOGLE FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Boot strap link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- custom colors  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'my-color': '#FF4240',
+
+
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <header class="container mx-auto my-14">
+        <!-- navbar + Bonus part -->
+        <section>
+            <div class="navbar bg-base-100">
+                <div class="navbar-center">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a><span class="text-my-color font-bold"> Home</span></a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost font-extrabold text-2xl lg:text-4xl">Hockey<span
+                            class="text-my-color">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a> <span class="text-my-color font-bold"> Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center">
+                    <!-- <img class="hidden sm:block w-16" src="Images/Search-icon.jpg" alt=""> -->
+                    <a class="btn bg-my-color text-white font-bold text-xl">Get Ticket</a>
+                </div>
+            </div>
+        </section>
+        <!-- Carousel or Slider section  -->
+        <section>
+
+        </section>
+    </header>
+
+    <main class="container mx-auto my-14">
+        <!-- Progress Section  -->
+        <section class="my-24">
+            <div class="text-center space-y-5 border-dashed border-y-2 lg:p-10 p-4 border-gray-300">
+                <h2 class="lg:text-4xl lg:font-extrabold text-2xl font-bold">Professional Hockeys Club</h2>
+                <p class="text-gray-600 max-w-4xl mx-auto">The National Hockey League was organized at the Windsor Hotel
+                    in Montreal on November 26, 1917, after the suspension of operations of its predecessor
+                    organization, the National Hockey Association (NHA), which had been founded in 1909 at Renfrew,
+                    Ontario.</p>
+            </div>
+
+            <div class="my-12 grid gap-9 lg:grid-cols-4 md:grid-cols-2 sm:p-4">
+                <!-- Real time Data or Progress  -->
+                <!-- data 1 -->
+                <div class="text-center">
+                    <div class="radial-progress font-extrabold text-2xl bg-white shadow-inner shadow-gray-400 text-my-color"
+                        style="--value:80; --size:8rem; --thickness: 0.8rem;" role="progressbar">
+                        <p class="text-black"> 87% </p>
+                    </div>
+                    <h3 class="text-2xl font-semibold mt-8">Prayer Facility</h3>
+                    <p class="text-gray-600">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                </div>
+                <!-- data 2  -->
+                <div class="text-center">
+
+                    <div class="radial-progress  bg-white shadow-inner font-extrabold text-2xl shadow-gray-400 text-[#49D293]"
+                        style="--value:90; --size:8rem; --thickness: .8rem;" role="progressbar">
+                        <p class="text-black">95% </p>
+                    </div>
+                    <h3 class="text-2xl font-semibold mt-8">Experienced Coach</h3>
+                    <p class="text-gray-600">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                </div>
+                <!-- data 3 -->
+                <div class="text-center">
+
+                    <div class="radial-progress font-extrabold text-2xl bg-white shadow-inner shadow-gray-400 text-[#FFB546]"
+                        style="--value:84; --size:8rem; --thickness: .8rem;" role="progressbar">
+                        <p class="text-black">90% </p>
+                    </div>
+                    <h3 class="text-2xl font-semibold mt-8">Senior Player</h3>
+                    <p class="text-gray-600">Amet consectetur. Condimentum dignissim adipiscing.</p>
+                </div>
+                <!-- data 4 -->
+                <div class="text-center">
+                    <div class="radial-progress font-extrabold text-2xl bg-white shadow-inner shadow-gray-400 text-[#4C8DF1]"
+                        style="--value:76; --size:8rem; --thickness: .8rem;" role="progressbar">
+                        <p class="text-black">80% </p>
+                    </div>
+                    <h3 class="text-2xl font-semibold mt-8">Training Ground</h3>
+                    <p class="text-gray-600">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                </div>
+            </div>
+        </section>
+        <!-- program Section  -->
+        <section class="my-20">
+            <div class="text-center space-y-5 border-dashed border-y-2 lg:p-10 p-3 border-gray-300">
+                <h2 class="lg:text-4xl text-2xl font-extrabold ">Program Sections</h2>
+                <p class="text-gray-600 max-w-4xl mx-auto">The National Hockey League was organized at the Windsor Hotel
+                    in Montreal on November 26, 1917, after the suspension of operations of its predecessor
+                    organization, which had been founded in 1909 at Renfrew,
+                    Ontario.</p>
+            </div>
+            <!-- Image Container  -->
+            <div class="lg:flex justify-between my-10 gap-10 ">
+                <div class=" lg:pt-16 space-y-7 lg:px-5 p-6">
+                    <h2 class="font-bold lg:text-[28px] text-2xl">Junior Program</h2>
+                    <p >
+                        he principal purpose of this development program is to prepare the athlete for career advancement either in a collegiate program or a professional opportunity. Junior hockey leagues/teams are certified, annually, by the Junior Council, in the following classifications:
+                    </p>
+                    <button class="btn bg-my-color text-white font-bold text-xl">Register Now!</button>
+                </div>
+                <div class="lg:pt-16 space-y-7 lg:px-5 p-6">
+                    <h2 class="font-bold lg:text-[28px] text-2xl">Teenager Program</h2>
+                    <p>
+                        he principal purpose of this development program is to prepare the athlete for career advancement either in a collegiate program or a professional opportunity. Junior hockey leagues/teams are certified, annually, by the Junior Council, in the following classifications:
+                    </p>
+                    <button class="btn bg-my-color text-white font-bold text-xl">Register Now!</button>
+                </div>
+            </div>
+            <!-- Single Image Container  -->
+            <div class="space-y-5">
+                <h2 class="font-bold lg:text-[28px] text-2xl">Professional Program</h2>
+                    <p class="max-w-xl">
+                        The AU online Certified Hockey Professional – Professional Education Program Orientation familiarizes you with the AU online learning environment, academic conduct, library resources, case studies, and other useful information to help you be successful in the CHP program.
+                    </p>
+                    <button class="btn bg-my-color text-white font-bold text-xl">Register Now!</button>
+            </div>
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
