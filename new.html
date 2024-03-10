@@ -2,20 +2,166 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check class </title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check class </title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- bootstrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles/style.css">
 
 </head>
 
 <body>
-    <h1>New Accordion </h1>
-    <!-- Check Daisy & tailwind Code  -->
-    <section>
+  <h1>New Accordion </h1>
+  <!-- Check Daisy & tailwind Code  -->
+  <section>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">
+        Click to open this one and close others
+      </div>
+      <div class="collapse-content">
+        <p>hello</p>
+      </div>
+    </div>
 
-    </section>
+  </section>
+
+  <section>
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false"
+            aria-controls="flush-collapsePlus text-xl font-bold">
+            Our Equipment
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body text-gray-600">Hockey players require a wealth of hockey equipment to stay well
+            protected and reach high performance levels on the field of play.We hope you find this hockey equipment and
+            clothing guide useful.
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- my final accoridon section   -->
+  </section>
+
+  <div class="accordion" id="accordionExample">
+    <!-- question 1  -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button font-bold text-xl" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Our Equipment
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body text-gray-600">Hockey players require a wealth of hockey equipment to stay well
+          protected and reach high performance levels on the field of play.We hope you find this hockey equipment and
+          clothing guide useful.
+        </div>
+      </div>
+    </div>
+    <!-- question - 2  -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed text-xl font-bold" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Hockey Training
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body  text-gray-600">
+          Hockey sticks vary in size and are usually made from wood or an array of composite materials, or often a
+          mixture of both. Many different bows and head shapes are available on the market, which suit particular styles
+          and positions.
+        </div>
+      </div>
+    </div>
+    <!-- Question 3  -->
+    <div class="accordion-item">
+      <h2 class="accordion-header " id="headingThree">
+        <button class="accordion-button collapsed font-bold lg:text-2xl text-xl" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Private Lessons
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body text-gray-600">
+          Hockey goalkeepers require their own specialist protection. For more information, please view our Goalkeeping
+          Hockey Gear Guide.
+        </div>
+      </div>
+    </div>
+    <!-- Question 4  -->
+    <div class="accordion-item">
+      <h2 class="accordion-header " id="headingFour">
+        <button class="accordion-button collapsed font-bold lg:text-2xl text-xl" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Ski Touring
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body text-gray-600">
+          Hockey goalkeepers require their own specialist protection. For more information, please view our Goalkeeping
+          Hockey Gear Guide.
+        </div>
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header " id="headingFive">
+        <button class="accordion-button collapsed font-bold lg:text-2xl text-xl" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Booking
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body text-gray-600">
+          Hockey goalkeepers require their own specialist protection. For more information, please view our Goalkeeping
+          Hockey Gear Guide.
+        </div>
+      </div>
+    </div>
+    <!-- Question 6  -->
+
+    <div class="accordion-item">
+      <h2 class="accordion-header " id="headingSix">
+        <button class="accordion-button collapsed font-bold lg:text-2xl text-xl" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Pricing
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body text-gray-600">
+          Water repellent materials and breathable mesh for improve air flow are a few things to look out for, but the
+          most important factors are how comfortable the bottoms feel on your skin and that they are an appropriate. These deliver exceptional moisture  help keep you warm or cool on the hockey field.
+        </div>
+      </div>
+    </div>
+
+  </div>
 
 </body>
 
